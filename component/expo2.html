@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .section-1{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 90px;
+        margin-right: 90px;
+        background-color: teal;
+    }
+    .container-feature{
+        display: flex;
+    justify-content: space-evenly;
+      
+    }
+    .features{
+        overflow: hidden;
+        border-radius: 15px;
+        border: 0.5px solid rgb(214, 213, 213);
+        
+    }
+    .feature-image{
+        width: 400px;
+        height: 170px;
+        overflow: hidden;
+        
+    }
+    .feature-image img{
+    width: 100%;
+    background-position:100px ;
+    }
+    .features h3,
+    .features p{
+    padding-left: 20px;
+    }
+    .features h3{
+    font-size: 20px;
+    color: rgb(41, 36, 36);
+    }
+    .features:hover{
+        transition: transform 0.7s;
+        transform: scale(1.04);
+        cursor: pointer;
+    }
+    .bottle{
+        font-size:  80px;
+        text-align: center;
+        font-weight: 600;
+    }
+</style>
+<body>
+    <section class="section-1">
+        <div class="bottle">
+            <h1>Explore</h1>
+        </div>
+        <div class="container container-feature">
+            
+            <div class="features">
+                <div class="feature-image">
+               <img src="https://ts2.mm.bing.net/th?id=OIP.PJBJPKGY-8bRfgIWHuqdIAHaER&pid=15.1" alt="">
+                </div>
+                <h3>Order Online</h3>
+                <p style="color: rgb(49,49,49);">Stay home and order to your doorstep</p>
+            </div>
+            <div class="features">
+                <div class="feature-image">
+               <img src="https://th.bing.com/th/id/OIP.bfNZa881dqB2rrYxGVgcaQHaFj?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                </div>
+                <h3>home remedies</h3>
+                <p style="color: rgb(49,49,49);">View some home remedies</p>
+            </div>
+            <div class="features">
+                <div class="feature-image">
+               <img src="https://th.bing.com/th/id/OIP.5xmvpG9jTz8ZQu2mO1rppwHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                </div>
+                <h3>Youtube</h3>
+                <p style="color: rgb(49,49,49);">Discover our youtube video</p>
+            </div>
+        </div>
+       </section>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "roboto";
+            background-color: antiquewhite;
+            margin: 30px 80px;
+            height: 70vh;
+        }
+
+        .wrapper {
+            perspective: 3000px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            width: 360px;
+            height: 400px;
+            transform-style: preserve-3d;
+            transition: transform .8s ease-in-out;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front-page-one,.front-page-two,.front-page-three,
+        .back-page {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+        }
+
+        .front-page-one {
+            background-image: url(image1.jpeg);
+            background-size: cover;
+        }
+        .front-page-two {
+            background-image: url(image2.jpeg);
+            background-size: cover;
+        }
+
+        .front-page-three {
+            background-image: url(image3.jpeg);
+            background-size: cover;
+        }
+        .card-info {
+            position: absolute;
+            bottom: 50px;
+            left: 45px;
+            color: #fff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .card-subtitle {
+            font-size: 1.2rem;
+            margin-top: 5px;
+            color: aqua;
+        }
+
+        .back-page {
+            background-color: black;
+            color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+        }
+
+        .card-content {
+            text-align: center;
+            padding: 20px;
+            max-width: 300px;
+        }
+
+        .card-content h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card-description {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .card-button {
+            background-color: aqua;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3 ease;
+        }
+
+        .card-button:hover {
+            background-color: transparent;
+            color: aqua;
+            border: 1px solid aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="front-page-one">
+                <div class="card-info">
+                    <h2 class="card-title">dengu</h2>
+                    <p class="card-subtitle">discover your content</p>
+                </div>
+            </div>
+
+            <div class="back-page">
+                <div class="card-content">
+                    <h3>aruu</h3>
+                    <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <button class="card-button">Explore more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front-page-two">
+                <div class="card-info">
+                    <h2 class="card-title">dengu</h2>
+                    <p class="card-subtitle">discover your content</p>
+                </div>
+            </div>
+
+            <div class="back-page">
+                <div class="card-content">
+                    <h3>aruu</h3>
+                    <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <button class="card-button">Explore more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front-page-three">
+                <div class="card-info">
+                    <h2 class="card-title">dengu</h2>
+                    <p class="card-subtitle">discover your content</p>
+                </div>
+            </div>
+
+            <div class="back-page">
+                <div class="card-content">
+                    <h3>aruu</h3>
+                    <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <button class="card-button">Explore more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
